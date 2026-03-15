@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image:url(../watch.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    
+
+}
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+    
+
+}
+.hero p{
+    font-size: 20px;
+    max-width:600px;
+margin-bottom:20px;
+
+}
+.hero .btn{
+    width: 60%;
+    padding: 17px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: none;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 21px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+
+    
+    
+}
+.btn:hover{
+    color: #eee;
+    transition: 0.2s;
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    z-index: 30;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap :60px
+
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold ;
+}
+.shop-section{
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgb(129, 120, 120);
+    align-items: center;
+    text-align: center;
+}
+.shop-section h2{
+    border: 1px solid;
+    border-radius: 20px;
+    
+}
+.watch-img {
+     width: 100%;
+     height: 180px;
+     margin-bottom: 20px;
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+}
+.casio1{
+    background-image: url(../casio.png);
+}
+.casio2{
+    background-image:url(../casio2.png) ;
+}
+.omega{
+    background-image:url(../omega.png);
+}
+.omega2{
+    background-image: url(../omega2.png);
+}
+.watch-card{
+    width: 310px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background: white;
+    padding: 20px ;
+    text-align:center;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    flex-shrink: 0;
+    box-sizing: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    
+    
+}
+.watch-card p{
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+.watch-container{
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 40px;
+
+}
+.watch-card span{
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+    
+    
+
+.shop-section h2{
+    color: #fff;
+}
+.watch-card:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent ;
+    transform: translateY( -12px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+
+}
+.watch-card:hover .watch-img{
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+.watch-img{
+    transition: transfrom 0.4 ease, filter 0.4 ease;
+}
